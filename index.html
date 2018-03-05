@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JQuery Basic assignment</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $('document').ready(function(){
+             $('#main img').click(function(){
+                 $(this).hide();
+                });
+            $('button').click(function(){
+                $('#main img').show();
+            })
+
+        });
+    </script>
+
+  </head>
+  <body>
+     <div id="wrapper">
+        <div id="header" >
+            <h3>My jQuery basic assignment</h3>
+            <img id="left-img" class="header-icon" src="left-arrow.png" alt="left arrow" />
+            <img id="right-img" class="header-icon" src="right-arrow.png" alt="right arrow" />
+            <img id="x-img" class="header-icon" src="x-image.png" alt="x image" />
+            <img id="home-img" class="header-icon" src="home.png" alt="home" />
+            <input id="Input-box" type="submit" value="http://google.com"  >
+        </div>
+        <div id="main">
+            <p>jQuery assignment-1</p>
+            <img src="adventure-cat.png" alt="adventure cat" />
+            <img  src="aidorucat.png" alt="adventure cat" />
+            <img  src="catandninja.png" alt="adventure cat" />
+            <img  src="chellocat.jpg" alt="adventure cat" />
+            <img  src="cherry.jpg" alt="adventure cat" />
+            <img  src="coder2.jpg" alt="adventure cat" />
+            <img  src="cooler.png" alt="adventure cat" />
+            <img  src="daftpunk.gif" alt="adventure cat" />
+        </div>
+        <button name="ninja">Restore</button>
+        <div id="footer">
+        </div>
+     </div>
+
+    </header>
+  </body>
+</html>
